@@ -1,9 +1,8 @@
 export default {
-  LAN: 'en',
-  LANSTR: 'Language',
-  LANEN: 'English',
-  LANZHTW: 'Traditional Chinese',
-  LANZHCN: 'Simplified Chinese',
-  HELLO: 'Hello!',
-  NAME: 'My name is {{value}}',
+  'lang': 'Language',
+  'lang.en': 'English',
+  'lang.zh-tw': 'Traditional Chinese',
+  'lang.zh-cn': 'Simplified Chinese',
+  'hello': 'Hello!',
+  'name': 'My name is {{value}}',
 }

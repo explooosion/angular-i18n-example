@@ -1,9 +1,8 @@
 export default {
-  LAN: 'zh-tw',
-  LANSTR: '語系',
-  LANEN: '英文',
-  LANZHTW: '繁體中文',
-  LANZHCN: '簡體中文',
-  HELLO: '嗨!',
-  NAME: '我的名字是 {{value}}',
+  'lang': '語系',
+  'lang.en': '英文',
+  'lang.zh-tw': '繁體中文',
+  'lang.zh-cn': '簡體中文',
+  'hello': '你好!',
+  'name': '我的名字是 {{value}}',
 }

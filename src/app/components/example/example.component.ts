@@ -12,13 +12,13 @@ export class ExampleComponent implements OnInit {
   optsDefault = 'en';
   opts = [{
     value: 'en',
-    translate: 'LANEN',
+    translate: 'lang.en',
   }, {
     value: 'zh-tw',
-    translate: 'LANZHTW',
+    translate: 'lang.zh-tw',
   }, {
     value: 'zh-cn',
-    translate: 'LANZHCN',
+    translate: 'lang.zh-cn',
   }]
 
   constructor(private translate: TranslateService) { }
