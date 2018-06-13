@@ -161,7 +161,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<select [(ngModel)]=\"optsDefault\" (change)=\"changeLocale($event)\">\n  <option *ngFor=\"let opt of opts\" [ngValue]=\"opt.value\">{{ opt.translate | translate }}</option>\n</select>\n<p>{{ 'LANSTR' | translate }} -\n  <span [innerHTML]=\"'LAN' | translate\"></span>\n</p>\n<p>{{ 'HELLO' | translate }}</p>\n<div [innerHTML]=\"'NAME' | translate:param\"></div>\n\n<!-- one way -->\n<!-- {{ 'LANSTR' | translate }} -->\n\n<!-- two way -->\n<!-- <span [innerHTML]=\"'LAN' | translate\"></span> -->\n"
+module.exports = "<select [(ngModel)]=\"optsDefault\" (change)=\"changeLocale($event)\">\n  <option *ngFor=\"let opt of opts\" [ngValue]=\"opt.value\">{{ opt.translate | translate }}</option>\n</select>\n<p>{{ 'lang' | translate }} -\n  <span>{{ optsDefault }}</span>\n</p>\n<p>{{ 'hello' | translate }}</p>\n<div [innerHTML]=\"'name' | translate:param\"></div>\n\n<!-- one way -->\n<!-- {{ 'LANSTR' | translate }} -->\n\n<!-- two way -->\n<!-- <span [innerHTML]=\"'LAN' | translate\"></span> -->\n"
 
 /***/ }),
 
@@ -206,13 +206,13 @@ var ExampleComponent = /** @class */ (function () {
         this.optsDefault = 'en';
         this.opts = [{
                 value: 'en',
-                translate: 'LANEN',
+                translate: 'lang.en',
             }, {
                 value: 'zh-tw',
-                translate: 'LANZHTW',
+                translate: 'lang.zh-tw',
             }, {
                 value: 'zh-cn',
-                translate: 'LANZHCN',
+                translate: 'lang.zh-cn',
             }];
     }
     ExampleComponent.prototype.ngOnInit = function () { };
@@ -271,13 +271,12 @@ var environment = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  LAN: 'en',
-  LANSTR: 'Language',
-  LANEN: 'English',
-  LANZHTW: 'Traditional Chinese',
-  LANZHCN: 'Simplified Chinese',
-  HELLO: 'Hello!',
-  NAME: 'My name is {{value}}',
+  'lang': 'Language',
+  'lang.en': 'English',
+  'lang.zh-tw': 'Traditional Chinese',
+  'lang.zh-cn': 'Simplified Chinese',
+  'hello': 'Hello!',
+  'name': 'My name is {{value}}',
 });
 
 
@@ -293,13 +292,12 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  LAN: 'zh-cn',
-  LANSTR: '语系',
-  LANEN: '英文',
-  LANZHTW: '繁体中文',
-  LANZHCN: '简体中文',
-  HELLO: '嗨!',
-  NAME: '我的名字是 {{value}}',
+  'lang': '语系',
+  'lang.en': '英文',
+  'lang.zh-tw': '繁体中文',
+  'lang.zh-cn': '简体中文',
+  'hello': '你好!',
+  'name': '我的名字是 {{value}}',
 });
 
 
@@ -315,13 +313,12 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  LAN: 'zh-tw',
-  LANSTR: '語系',
-  LANEN: '英文',
-  LANZHTW: '繁體中文',
-  LANZHCN: '簡體中文',
-  HELLO: '嗨!',
-  NAME: '我的名字是 {{value}}',
+  'lang': '語系',
+  'lang.en': '英文',
+  'lang.zh-tw': '繁體中文',
+  'lang.zh-cn': '簡體中文',
+  'hello': '你好!',
+  'name': '我的名字是 {{value}}',
 });
 
 
